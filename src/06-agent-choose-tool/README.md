@@ -52,8 +52,7 @@ interface ToolSelection {
 
 ## Estado del Agente
 
-```
-
+```typescript
 interface AgentState {
   available_tools: Tool[];
   tool_history: ToolUse[];
@@ -73,9 +72,8 @@ interface AgentState {
 
 ## Proceso de Selección
 
-```
-
-graph TD
+```graph 
+    TD
     A[Analizar Tarea] --> B[Evaluar Herramientas]
     B --> C[Calcular Puntuaciones]
     C --> D[Seleccionar Mejor Opción]
