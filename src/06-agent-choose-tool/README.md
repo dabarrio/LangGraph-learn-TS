@@ -33,8 +33,7 @@ src/06-agent-choose-tool/
 
 ## Sistema de Decisión
 
-```
-
+```typescript
 interface DecisionCriteria {
   confidence: number;
   relevance: number;
@@ -87,7 +86,7 @@ graph TD
 
 Para ejecutar este ejemplo:
 
-```
+```bash
 
 # Navegar al directorio
 cd src/06-agent-choose-tool
@@ -98,7 +97,7 @@ pnpm start
 
 ## Ejemplo de Código
 
-```
+```typescript
 
 // Ejemplo de uso del agente con selección de herramientas
 const agent = new ToolChooserAgent({
@@ -207,4 +206,3 @@ class NewTool extends BaseTool {
 - Overhead en selección inicial
 - Dependencia del historial
 - Limitaciones de memoria
-```
