@@ -72,8 +72,8 @@ interface AgentState {
 
 ## Proceso de Selección
 
-```graph 
-    TD
+```mermaid
+graph TD
     A[Analizar Tarea] --> B[Evaluar Herramientas]
     B --> C[Calcular Puntuaciones]
     C --> D[Seleccionar Mejor Opción]
