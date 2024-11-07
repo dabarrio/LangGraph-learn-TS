@@ -30,7 +30,7 @@ src/07-ollama-rag/
 ## Componentes del Sistema
 
 ### 1. Procesamiento de Documentos
-```
+```typescript
 
 interface Document {
   id: string;
@@ -52,7 +52,7 @@ interface DocumentChunk {
 ```
 
 ### 2. Sistema de Embeddings
-```
+```typescript
 
 interface EmbeddingConfig {
   model: string;
@@ -67,8 +67,7 @@ interface EmbeddingConfig {
 
 ## Flujo del Sistema RAG
 
-```
-
+```mermaid
 graph TD
     A[Entrada Query] --> B[Generar Embedding]
     B --> C[Búsqueda Vectorial]
@@ -82,8 +81,7 @@ graph TD
 
 Para ejecutar este ejemplo:
 
-```
-
+```bash
 # Navegar al directorio
 cd src/07-ollama-rag
 
@@ -93,7 +91,7 @@ pnpm start
 
 ## Ejemplo de Código
 
-```
+```typescript
 
 // Ejemplo de uso del sistema RAG
 const ragSystem = new OllamaRAG({
@@ -144,7 +142,7 @@ const response = await ragSystem.query("¿Cuál es la política de devoluciones?
 ## Configuración del Sistema
 
 ### Vector Store
-```
+```typescript
 
 interface VectorStoreConfig {
   dimensions: number;
@@ -158,7 +156,7 @@ interface VectorStoreConfig {
 ```
 
 ### Retriever
-```
+```typescript
 
 interface RetrieverConfig {
   topK: number;
@@ -224,4 +222,3 @@ interface RetrieverConfig {
 - Consumo de memoria en grandes colecciones
 - Latencia en generación de embeddings
 - Límites de contexto en generación
-```
