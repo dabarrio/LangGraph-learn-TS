@@ -35,7 +35,7 @@ Este proyecto es una adaptación en TypeScript del tutorial [LangGraph-learn](ht
 
 ```bash
 # Clonar el repositorio
-git clone [URL-del-repositorio]
+git clone https://github.com/dabarrio/LangGraph-learn-TS
 
 # Instalar dependencias
 pnpm install
